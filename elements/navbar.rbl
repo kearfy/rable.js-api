@@ -1,0 +1,9 @@
+<a href="/" class="brand"><?app:name?></a>
+
+<label for="toggle">☰</label>
+<input type="checkbox" id="toggle">
+
+<div class="links">
+    <a href="https://github.com/kearfy/rable.js-api" target="_blank">github</a>
+    <a href="https://npmjs.com/package/rable.js-api" target="_blank">npm</a>
+</div>

@@ -1,0 +1,29 @@
+{
+  "name": "rablejs-api-example",
+  "version": "1.0.0",
+  "description": "Rable is a library for NodeJS providing an advanced router and templating system.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "clean-jsdoc-theme": "^2.2.11",
+    "rable.js": "^1.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "gendoc": "jsdoc -c jsdoc.json --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kearfy/rable.js-api.git",
+    "directory": "lib"
+  },
+  "author": "Micha de Vries",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/kearfy/rable.js-api/issues"
+  },
+  "homepage": "https://github.com/kearfy/rable.js-api#readme"
+}

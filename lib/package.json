@@ -1,0 +1,23 @@
+{
+  "name": "rable.js-api",
+  "version": "1.0.0",
+  "description": "The official API plugin for rable.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kearfy/rable.js-api.git"
+  },
+  "author": "Micha de Vries",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/kearfy/rable.js-api/issues"
+  },
+  "homepage": "https://github.com/kearfy/rable.js-api#readme",
+  "dependencies": {
+    "locdb": "^1.1.0",
+    "rable.js": "^1.0.5"
+  }
+}

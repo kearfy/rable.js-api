@@ -1,0 +1,25 @@
+<div class="container">
+    <b>Welcome</b>
+    <p>
+        Welcome to the root of the Application Programming Interface (API) of this website. <br>
+        This section of the website i most likely used for communications between the front-end of the website, what you see right now, and the back-end of this website, where everything is being processed. <br>
+        If you don't know what you are doing here, we kindly refer you back to <a href="/">the absolute root</a> of this website. <br>
+        For more information about this API, please contact the administrator of this website.
+    </p>
+</div>
+
+<style media="screen">
+    .container {
+        width: 90%;
+        min-height: calc(95vh - 60px);
+        margin: calc(5vh / 2) 5%;
+    }
+
+    b {
+        font-size: 25px;
+    }
+
+    p {
+        margin: 15px 0px calc(5vh / 2) 0px;
+    }
+</style>

@@ -1,0 +1,5 @@
+{
+    "location": "/api/",
+    "introduction": "DEFAULT",
+    "defaultMethod": "post"
+}
