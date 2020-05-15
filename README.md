@@ -1,4 +1,4 @@
-# Rable
+# rable.js-api
 Rable.js-api is the official API extention to rable.js
 
 ## Installation
