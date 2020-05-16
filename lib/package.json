@@ -1,6 +1,6 @@
 {
   "name": "rable.js-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The official API plugin for rable.js",
   "main": "index.js",
   "scripts": {
@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/kearfy/rable.js-api/issues"
   },
-  "homepage": "https://github.com/kearfy/rable.js-api#readme",
-  "dependencies": {
-    "locdb": "^1.1.0",
-    "rable.js": "^1.0.5"
-  }
+  "homepage": "https://github.com/kearfy/rable.js-api#readme"
 }
