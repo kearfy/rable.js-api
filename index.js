@@ -1,7 +1,8 @@
 const Rable = require('rable.js');
 const RableAPI = require(__dirname + '/lib');
 const app = new Rable({
-	port: 3002
+	port: 3002,
+	assets: 'assets'
 });
 
 //bind the API controller to the Rable instance.
