@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "clean-jsdoc-theme": "^2.2.11",
-    "rable.js": "^1.0.9"
+    "rable.js": "^1.0.10"
   },
   "devDependencies": {},
   "scripts": {
