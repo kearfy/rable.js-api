@@ -63,7 +63,7 @@
  * Initial Library.
  *
  * @property {string} version The current version of the Library.
- * @property {string} config The configuration of the Libary.
+ * @property {object} config The configuration of the Libary.
  */
 
 class RableAPI {
@@ -82,8 +82,8 @@ class RableAPI {
         this.config = Object.assign(require('./default.json'), (input === undefined ? {} : input));
         this.config.location = (this.config.location.slice(-1) !== '/' ? (this.config.location.slice(-1) == '~' ? this.config.location.slice(1, -1) : this.config.location += '/') : this.config.location);
 
-        this.instance.use(this.config.location + '~', () => {
-            var url = req.url.slice(this.config.location.length);
+        this.instance.all(this.config.location + '~', (req, res) => {
+            var url = (this.instance.config.proxy !== false &amp;&amp; this.instance.config.matchByProxy ? req.proxyUrl : req.url).slice(this.config.location.length);
             if (url.slice(-1) == '/') url = url.slice(0, -1);
             var parsed = url.split('/');
 
@@ -181,7 +181,7 @@ class RableAPI {
         }, {noTemplate: true});
 
         if (this.config.introduction !== false &amp;&amp; this.config.introduction !== null) {
-            this.instance.use(this.config.location.slice(0, -1), () => {
+            this.instance.all(this.config.location.slice(0, -1), (req, res) => {
                 if (this.config.introduction === 'DEFAULT' || this.config.introduction.constructor.name != 'String' || this.config.introduction.constructor.name != 'Function') {
                     res.sendFile(__dirname + '/intro.rbl', {data: {
                         version: this.version

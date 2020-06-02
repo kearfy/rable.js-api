@@ -1,6 +1,6 @@
 {
   "name": "rable.js-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The official API plugin for rable.js",
   "main": "index.js",
   "scripts": {
